@@ -1,0 +1,16 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить категорию</title>
+</head>
+<body>
+    <h1>Добавить категорию</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p  }}
+        <button type="{submit}">Добавить категорию!</button>
+    </form>
+    <a href="{% url 'product_list' %}">Вернуться на главную страницу!</a>
+</body>
+</html>

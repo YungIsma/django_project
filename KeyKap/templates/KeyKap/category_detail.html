@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категория - {{ category.title }}</title>
+</head>
+<body>
+    <h1>Категория - {{ category.title }}</h1>
+    <p>Описание:{{ category.description }}</p>
+    <p><a href="{% url 'create_detail' pk=category.pk">Добавить товар</a></p>
+    <h2>Товары:</h2>
+    {% for keykap in keykaps%}
+        <p><b><a href={%url 'create_detail' pk=category%}/good{{good.pk}}' </b></p>
+</body>
+</html>
